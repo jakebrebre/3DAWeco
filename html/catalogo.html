@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo</title>
+    <link rel="stylesheet" href="../css/catalogo.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    
+</head>
+<body>
+
+
+    <!--Inicio do menu de navegação-->
+    
+    <header>
+        <nav>
+            <div class="logo-container">
+            <img src="../img/logo.png" alt="" width="70px" class="logo-img">
+            <a href="" class="logo-text">ECOESCAMBO</a>
+    </div>
+
+            <div class="mobile-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+              </div>
+              <ul class="nav-list">
+                <li><a href="../html/meusprodutos.html">Meus Produtos</a></li>
+                <li><a href="../html/cadastrarproduto.html">Cadastrar Produto</a></li>
+              </ul>
+            </nav>
+          </header>
+
+
+<!-- Filtros -->
+<div class="filtros-catalogo">
+    <form id="form-filtros">
+      <label for="filtro-interesse">Filtrar por interesse:</label>
+      <select id="filtro-interesse">
+        <option value="">Todos</option>
+        <option value="sim">Tenho interesse</option>
+        <option value="nao">Não tenho interesse</option>
+      </select>
+      <button type="submit" class="btn-filtrar">Filtrar</button>
+    </form>
+  </div>  
+  
+
+
+
+<!--inicio das categorias-->
+<div class="categorias">
+
+<div class="corpo-categorias">
+
+
+    <div class="card-produto" data-categoria="livros" data-local="sp">
+        <img src="../img/produto3.jpg" alt="Imagem do produto">
+        <div class="info-produto">
+            <h3>TÍTULO DO PRODUTO</h3>
+            <p>
+                Diabo diabo diabo diabo diabo diabo<br>
+                diabo diabo diabo diabo diabo diabo
+            </p>
+            <button class="btn-interesse">TENHO INTERESSE</button>
+        </div>
+    </div>
+    
+    <div class="card-produto" data-categoria="eletronicos" data-local="rj">
+        <img src="../img/produto2.png" alt="Imagem do produto">
+        <div class="info-produto">
+            <h3>TÍTULO DO PRODUTO</h3>
+            <p>
+                Diabo diabo diabo diabo diabo diabo<br>
+                diabo diabo diabo diabo diabo diabo
+            </p>
+            <button class="btn-interesse">TENHO INTERESSE</button>
+        </div>
+    </div>
+
+    <div class="card-produto" data-categoria="roupas" data-local="mg">
+        <img src="../img/produto1.jpg" alt="Imagem do produto">
+        <div class="info-produto">
+            <h3>TÍTULO DO PRODUTO</h3>
+            <p>
+                Diabo diabo diabo diabo diabo diabo<br>
+                diabo diabo diabo diabo diabo diabo
+            </p>
+            <button class="btn-interesse">TENHO INTERESSE</button>
+        </div>
+    </div>
+
+     
+
+    </div>
+
+    </div>
+
+
+<script src="../js/catalogo.js"></script>
+<script src="../js/navbar.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cadastrar Produto</title>
+  <link rel="stylesheet" href="../css/produtos.css">
+  <link rel="stylesheet" href="../css/navbar.css">
+</head>
+<body>
+
+  <header>
+      <nav>
+          <div class="logo-container">
+              <img src="../img/logo.png" href="../html/catalogo.html" alt="" width="70px" class="logo-img">
+              <a href="../html/catalogo.html" class="logo-text">ECOESCAMBO</a>
+          </div>
+          <div class="mobile-menu">
+              <div class="line1"></div>
+              <div class="line2"></div>
+              <div class="line3"></div>
+          </div>
+          <ul class="nav-list">
+              <li><a href="../html/meusprodutos.html">Meus Produtos</a></li>
+              <li><a href="../html/cadastrarproduto.html">Cadastrar Produto</a></li>
+          </ul>
+      </nav>
+  </header>
+  <div class="container">
+  <h1>Cadastrar Produto</h1>
+  <button onclick="window.location.href='meusprodutos.html'">Voltar</button>
+
+  <form id="form-produto">
+    <input type="text" id="titulo" placeholder="Título" required />
+    <input type="text" id="foto" placeholder="URL da Imagem" required />
+    <textarea id="descricao" placeholder="Descrição" required></textarea>
+    <select id="categoria" required>
+      <option value="">Selecione a categoria</option>
+      <option value="livros">Livros</option>
+      <option value="roupas">Roupas</option>
+      <option value="eletronicos">Eletrônicos</option>
+      <option value="outros">Outros</option>
+    </select>
+     <label for="interessados">Simular interessados:</label>
+    <select id="interessados" required>
+     <option value="0">0 interessados</option>
+     <option value="1">1 interessado</option>
+     <option value="2">2 interessados</option>
+     <option value="3">3 interessados</option>
+    </select>
+    <button type="submit">Salvar Produto</button>
+  </form>
+</div>
+ 
+
+
+  <script src="..\js\cadastrarproduto.js"></script>
+  <script src="..\js\navbar.js"></script>
+</body>
+</html>
+
+

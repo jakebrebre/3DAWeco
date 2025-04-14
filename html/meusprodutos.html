@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Meus Produtos</title>
+  <link rel="stylesheet" href="../css/produtos.css">
+  <link rel="stylesheet" href="../css/navbar.css">
+</head>
+<body>
+
+  <!-- Menu de navegação -->
+  <header>
+    <nav>
+      <div class="logo-container">
+        <img src="../img/logo.png" href="../html/catalogo.html" alt="" width="70px" class="logo-img">
+        <a href="../html/catalogo.html" class="logo-text">ECOESCAMBO</a>
+      </div>
+
+      <div class="mobile-menu">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+      <ul class="nav-list">
+        <li><a href="../html/meusprodutos.html">Meus Produtos</a></li>
+        <li><a href="../html/cadastrarproduto.html">Cadastrar Produto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+<!-- Filtros -->
+<section class="filtros-catalogo">
+  <form id="form-filtros">
+    <select name="interesse" id="filtro-interesse">
+      <option value="">Todos os Produtos</option>
+      <option value="com">Com Interessados</option>
+      <option value="sem">Sem Interessados</option>
+    </select>
+    <button type="submit" class="btn-filtrar">Filtrar</button>
+  </form>
+</section>
+
+
+
+
+
+<div class="container">
+  <h1>Meus Produtos</h1>
+  <button onclick="window.location.href='cadastrarproduto.html'">Cadastrar Novo Produto</button>
+
+  <!-- Lista de Produtos -->
+  <section id="lista-produtos" class="corpo-categorias"></section>
+</div>
+  <script src="..\js\meusprodutos.js"></script>
+  <script src="..\js\navbar.js"></script>
+  
+
+
+
+</body>
+</html>
